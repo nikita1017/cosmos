@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+body{
+    background: linear-gradient(-45deg, #f1b602, #eafc23, #e677ff);
+    height: 100%;
+}
+header{
+    position: relative;
+    margin: 0;
+    background: linear-gradient(-45deg, #9400fd, #f500b4, #0410f6);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.astronaut{
+    display: inline-block;
+    width: 50px;
+}
+.logo{
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+.center-info li{
+    display: inline-block;
+}
+.center-info a{
+    text-decoration: none;
+    color: white;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.navigation li{
+    list-style: none;
+}
+ .navigation li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+.navigation li a:hover,
+.navigation li a.active{
+    background: #112434;
+    color: #fff;
+}
+main{
+    text-align: center;
+}
+main h1{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+main img{
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
